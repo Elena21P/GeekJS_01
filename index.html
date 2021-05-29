@@ -521,3 +521,38 @@
     </footer>
   </body>
 </html>
+<script>
+  function setNavWrapDisplay() {
+    const elem = document.getElementById("nav-wrap");
+    if (elem.classList.contains("display-none"))
+      elem.classList.remove("display-none");
+    else elem.classList.add("display-none");
+  }
+</script>
+<script type="module">
+  import { getItems } from "./script/product_card.js";
+  import { getProductItemHtml } from "./script/product_card.js";
+  window.onload = onLoadWindow;
+  function setNavWrapDisplay() {
+    const elem = document.getElementById("nav-wrap");
+    if (elem.classList.contains("display-none"))
+      elem.classList.remove("display-none");
+    else elem.classList.add("display-none");
+  }
+  function onLoadWindow() {
+    loadProdactCard();
+  }
+  function loadProdactCard() {
+    let elemGrid = document.getElementById("product-items");
+
+    const products = getItems(6, "./img/index-page/");
+
+    let innerHTML = elemGrid.innerHTML;
+
+    products.forEach((item) => {
+      innerHTML += getProductItemHtml(item);
+    });
+
+    elemGrid.innerHTML = innerHTML;
+  }
+</script>
