@@ -1,4 +1,4 @@
-export function getItems(count,imgFolder) {
+export function getItems(count=3,imgFolder) {
     const name = `ELLERY X M'O CAPSULE`;
     const text = `Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.`;
     const price = 52.0;
