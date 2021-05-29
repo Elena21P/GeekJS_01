@@ -1,0 +1,32 @@
+$color-primary: #f16d7f;
+
+.promo {
+  background-color: #f1e4e6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 72px);
+
+  .promo_img {
+    background-image: url("../../img/man.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .promo__text {
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    & div {
+      padding-left: 15px;
+      border: none;
+      border-left: solid 10px #f16d7f;
+    }
+    .promo__text__top {
+      font-size: 48px;
+      display: block;
+    }
+  }
+}

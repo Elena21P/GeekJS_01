@@ -1,0 +1,125 @@
+$color-primary: #f16d7f;
+$color-secondary: #6f6e6e;
+$color-input-border: #a4a4a4;
+
+.filter__container {
+  display: grid;
+  grid-template-columns: 100px 8fr;
+  align-items: center;
+
+  margin-bottom: 70px;
+  > div {
+    margin-top: 45px;
+  }
+  & svg {
+    vertical-align: middle;
+    padding-left: 0px;
+  }
+  .filter__left {
+    min-width: 35px;
+    width: 100%;
+    align-self: flex-start;
+    position: relative;
+    .filter__block {
+      position: absolute;
+      top: 0px;
+      z-index: 99;
+      background-color: white;
+      ul {
+        padding-left: 5px;
+      }
+
+      .filter__summary {
+        font-weight: 600;
+        padding: 10px;
+        .filter__text {
+          display: inline;
+        }
+      }
+      > details[open] {
+        width: 360px;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  .filter__groups {
+    display: flex;
+    align-items: center;
+    .group__block {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      .trending__block {
+        min-width: 160px;
+        position: relative;
+        .trending__details {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      .size__block {
+        min-width: 75px;
+        position: relative;
+        .size__details {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 98;
+          background-color: white;
+        }
+        > details[open] {
+          width: 75px;
+          box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+          padding-bottom: 10px;
+          > ul {
+            padding-left: 20px;
+            > li {
+              > label {
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+      .price__block {
+        min-width: 100px;
+        position: relative;
+        .price__details {
+          position: absolute;
+        }
+      }
+      & summary {
+        font-weight: normal;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+details {
+  padding-bottom: 10px;
+  summary {
+    display: block;
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+    }
+    &:focus {
+      outline: none;
+      color: $color-primary;
+    }
+  }
+}
+.filter__subsummary {
+  border-bottom: solid 1px $color-input-border;
+  border-left: solid 3px $color-primary;
+  border-top: none;
+  border-right: none;
+  padding: 8px;
+  margin: 8px;
+}
+.filter__item {
+  padding-left: 25px;
+}

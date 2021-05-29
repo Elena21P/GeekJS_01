@@ -1,0 +1,36 @@
+.section {
+  padding: 0 15px;
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+  .section {
+    padding: 0 calc(50vw - 220px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1139px) {
+  .section {
+    padding: 0 calc(50vw - 384px);
+  }
+  .btn-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header {
+    background-color: #fa1313;
+  }
+}
+
+@media (min-width: 1140px) {
+  .section {
+    padding: 0 calc(50vw - 570px);
+  }
+}
+/*# sourceMappingURL=section.css.map */

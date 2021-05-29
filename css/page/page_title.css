@@ -1,0 +1,20 @@
+.page_title {
+  background-color: #f8f3f4;
+}
+
+.page_title .page_title__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page_title .page_title__block .page-title {
+  margin: 40px 0;
+}
+/*# sourceMappingURL=page_title.css.map */

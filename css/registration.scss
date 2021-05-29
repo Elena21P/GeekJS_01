@@ -1,0 +1,64 @@
+$background-color-dark: #222222;
+$background-color-light: #f8f3f4;
+$background-color-light-card: #f3eeef;
+$color-primary: #f16d7f;
+$color-black: #000000;
+$color-text: #575757;
+$color-secondary: #6f6e6e;
+$color-intut-border: #a4a4a4;
+
+.reg__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .form-reg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+    min-width: 360px;
+    font-size: 13px;
+    font-weight: 300;
+
+    button {
+      margin-top: 30px;
+    }
+    .gender-radio {
+      label {
+        font-size: 13px;
+      }
+    }
+    .pass-note {
+      color: #b1b1b1;
+    }
+  }
+
+  .perks__container {
+    flex: 1;
+    font-size: 24px;
+    font-weight: 300;
+    color: $color-black;
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    ul {
+      list-style: none;
+      li {
+        margin-top: 10px;
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 2px;
+          left: 0;
+          content: " ";
+          width: 50px;
+          height: 50px;
+          background: url("../img/list-item.svg") no-repeat;
+          margin-left: -40px;
+        }
+      }
+    }
+  }
+}

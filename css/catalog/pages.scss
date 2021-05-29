@@ -1,0 +1,39 @@
+$color-primary: #f16d7f;
+
+.pages__container {
+  margin: 25px;
+  margin-bottom: 50px;
+  padding: 5px;
+  text-align: center;
+  .pages {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    vertical-align: middle;
+    .btn-icon-black {
+      color: black;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      :hover {
+        color: $color-primary;
+        background-color: transparent;
+      }
+    }
+    a {
+      margin: 10px;
+      color: #c4c4c4;
+      text-decoration: none;
+      &:hover {
+        color: $color-primary;
+      }
+      &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+}

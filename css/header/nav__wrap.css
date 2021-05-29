@@ -1,0 +1,35 @@
+header .nav__wrap {
+  max-width: 232px;
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  -webkit-box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 15px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .nav__wrap div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 0;
+}
+
+header .nav__wrap .nav__title {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+header .nav__wrap ul {
+  padding-left: 18px;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=nav__wrap.css.map */

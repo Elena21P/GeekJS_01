@@ -1,0 +1,20 @@
+$color-primary: #f16d7f;
+.breadcrumb__container {
+  .breadcrumb__item {
+    color: #636363;
+    font-size: 14px;
+    &::after {
+      content: " / ";
+    }
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+  }
+  .breadcrumb__item.current {
+    color: $color-primary;
+    &::after {
+      content: "";
+    }
+  }
+}

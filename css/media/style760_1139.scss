@@ -1,0 +1,120 @@
+@mixin flex-space-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 760px) and (max-width: 1139px) {
+  .product__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    gap: 10px;
+  }
+
+  .container {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  .btn-user,
+  .btn-cart {
+    display: none;
+    padding: 0;
+  }
+
+  .promo {
+    @include flex-space-center;
+    height: calc(100vh - 72px);
+    max-height: 368px;
+    .promo_img {
+      display: none;
+    }
+    .promo__text {
+      padding: 0 calc(50vw - 220px);
+      font-size: 20px;
+      .promo__text__top {
+        font-size: 36px;
+      }
+    }
+  }
+  .filter__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offer {
+    & .offer__item {
+      & h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+    .accesories {
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .product__container {
+    .slide {
+      height: 624px;
+    }
+  }
+  .subscribe__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    & > div {
+      margin: 25px 0px;
+    }
+  }
+  .product-description {
+    margin: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .feature__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .feature__block {
+      width: 100%;
+    }
+  }
+  .shopping {
+    display: flex;
+    flex-direction: column;
+    .shopping__block {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      .shipping__form {
+        flex: 1;
+        padding-right: 20px;
+      }
+      .shopping__total {
+        margin: 20px 0;
+      }
+    }
+  }
+  .reg__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .form-reg {
+      width: 30%;
+    }
+    .perks__container {
+      font-size: 16px;
+
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .odd-items {
+    .product__item:last-child {
+      display: none;
+    }
+  }
+}

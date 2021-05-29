@@ -1,0 +1,25 @@
+.feature {
+  margin-top: 100px;
+  padding: 50px 0px;
+}
+
+.feature .feature__block {
+  width: 30%;
+}
+
+.feature .feature__block div {
+  padding: 10px 0 10px 0;
+}
+
+.feature .feature__text {
+  color: #f8f8f8;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.feature .feature__title {
+  color: #f8f8f8;
+  font-weight: normal;
+  font-size: 20px;
+}
+/*# sourceMappingURL=feature.css.map */

@@ -1,0 +1,110 @@
+.product__container .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f7f7f7;
+  z-index: 0;
+  height: 777px;
+  background-image: url(../../img/product-page/slide_img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+.product__container .slide .slide__btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: rgba(42, 42, 42, 0.15);
+}
+
+.product__container .slide .slide__btn:hover {
+  color: #f16d7f;
+}
+
+.product__container .slide > img {
+  min-width: 100px;
+}
+
+.product-description {
+  border: solid #eaeaea 1px;
+  background-color: white;
+  margin: -50px 0 0 0;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.product-description > div {
+  max-width: 640px;
+  margin: 50px auto;
+}
+
+.product-description button {
+  margin-top: 50px;
+}
+
+.product-description > * {
+  margin-top: 50px;
+}
+
+.product-description__title-group {
+  color: #f16d7f;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.product-description__title {
+  color: #4d4d4d;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.product-description__title::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 4px;
+  margin-bottom: 15px;
+  background-color: #f16d7f;
+}
+
+.product-description__price {
+  font-size: 24px;
+}
+
+.product-description__price::after {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #eaeaea;
+}
+
+.product-description__choose {
+  display: inline;
+  padding: 10px;
+}
+
+.product-description__choose::after {
+  content: url("../../img/down.svg");
+  vertical-align: middle;
+  padding-left: 8px;
+}
+/*# sourceMappingURL=product__page.css.map */

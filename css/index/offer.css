@@ -1,0 +1,55 @@
+.offer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+  gap: 10px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.offer .offer__item {
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer .offer__item h2 {
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.offer .offer__item h2 .primary {
+  font-size: 24px;
+}
+
+.offer .accesories {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  background-image: url("../../img/accesories_topic.png");
+}
+
+.offer .accesories h2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.offer .kids {
+  background-image: url("../../img/kids_topic.png");
+}
+
+.offer .woman {
+  background-image: url("../../img/woman_topic.png");
+}
+
+.offer .man {
+  background-image: url("../../img/man_topic.png");
+}
+/*# sourceMappingURL=offer.css.map */

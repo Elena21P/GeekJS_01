@@ -1,0 +1,17 @@
+@media (min-width: 1140px) {
+  .container {
+    // padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  header {
+    .nav__wrap {
+      height: calc(100vh - 72px);
+    }
+  }
+  .product__container {
+    .slide {
+      height: 777px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.copyright__container .social > button {
+  margin: 0 2px;
+  padding: 3px 6px;
+}
+
+.footer__subscribe {
+  background-image: url("../../img/subscribe_fon.png");
+  background-position: left;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__subscribe .subscribe__info {
+  text-align: center;
+}
+
+.footer__subscribe .subscribe__info div {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.footer__subscribe .subscribe__enter {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__subscribe .subscribe__enter .subscribe__text1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer__subscribe .subscribe__enter .subscribe__form input[type="email"]:focus {
+  background-color: #f8f8f8;
+  border-color: #f16d7f;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer__subscribe .subscribe__enter .subscribe__form .subscribe__email,
+.footer__subscribe .subscribe__enter .subscribe__form .subscribe__btn {
+  outline: none;
+  border: 2px;
+  padding: 20px;
+  border: solid 1px;
+}
+
+.footer__subscribe .subscribe__enter .subscribe__form .subscribe__email {
+  border-radius: 20px 0 0px 20px;
+  width: 60%;
+  border-color: #e1e1e1;
+  background-color: #e1e1e1;
+}
+
+.footer__subscribe .subscribe__enter .subscribe__form .subscribe__btn {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 0px 20px 20px 0;
+  border-color: #f16d7f;
+}
+/*# sourceMappingURL=footer.css.map */

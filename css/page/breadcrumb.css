@@ -1,0 +1,21 @@
+.breadcrumb__container .breadcrumb__item {
+  color: #636363;
+  font-size: 14px;
+}
+
+.breadcrumb__container .breadcrumb__item::after {
+  content: " / ";
+}
+
+.breadcrumb__container .breadcrumb__item:hover, .breadcrumb__container .breadcrumb__item:focus {
+  color: #f16d7f;
+}
+
+.breadcrumb__container .breadcrumb__item.current {
+  color: #f16d7f;
+}
+
+.breadcrumb__container .breadcrumb__item.current::after {
+  content: "";
+}
+/*# sourceMappingURL=breadcrumb.css.map */

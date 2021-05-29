@@ -1,0 +1,28 @@
+header {
+  .nav__wrap {
+    max-width: 232px;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    box-sizing: border-box;
+    & div:first-child {
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 0;
+    }
+
+    .nav__title {
+      font-weight: bold;
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+    ul {
+      padding-left: 18px;
+      line-height: 1.5;
+    }
+  }
+}

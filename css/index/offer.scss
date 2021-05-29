@@ -1,0 +1,43 @@
+.offer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content;
+  gap: 10px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  & .offer__item {
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    & h2 {
+      font-weight: normal;
+      font-size: 16px;
+      color: white;
+      & .primary {
+        font-size: 24px;
+      }
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  }
+  .accesories {
+    grid-column: 1/4;
+    background-image: url("../../img/accesories_topic.png");
+
+    h2 {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .kids {
+    background-image: url("../../img/kids_topic.png");
+  }
+
+  .woman {
+    background-image: url("../../img/woman_topic.png");
+  }
+  .man {
+    background-image: url("../../img/man_topic.png");
+  }
+}

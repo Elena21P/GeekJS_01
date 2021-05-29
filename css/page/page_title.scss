@@ -1,0 +1,13 @@
+$color-back: #f8f3f4;
+
+.page_title {
+  background-color: $color-back;
+  .page_title__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .page-title {
+      margin: 40px 0;
+    }
+  }
+}

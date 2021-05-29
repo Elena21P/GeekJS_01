@@ -1,0 +1,34 @@
+.section {
+  padding: 0 15px;
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 767px) {
+  .section {
+    padding: 0 calc(50vw - 220px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1139px) {
+  .section {
+    padding: 0 calc(50vw - 384px);
+  }
+
+  .btn-user {
+    display: flex;
+  }
+  .header {
+    background-color: rgb(250, 19, 19);
+  }
+}
+
+@media (min-width: 1140px) {
+  .section {
+    padding: 0 calc(50vw - 570px);
+  }
+}

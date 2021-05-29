@@ -1,0 +1,41 @@
+.promo {
+  background-color: #f1e4e6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 72px);
+}
+
+.promo .promo_img {
+  background-image: url("../../img/man.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.promo .promo__text {
+  font-size: 32px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.promo .promo__text div {
+  padding-left: 15px;
+  border: none;
+  border-left: solid 10px #f16d7f;
+}
+
+.promo .promo__text .promo__text__top {
+  font-size: 48px;
+  display: block;
+}
+/*# sourceMappingURL=promo.css.map */

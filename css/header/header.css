@@ -1,0 +1,78 @@
+.header {
+  position: relative;
+}
+
+.header .header__container > div {
+  padding: 15px;
+}
+
+.header .header__container .search-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header .header__container .search__label {
+  background: url("../../img/magnify.svg") no-repeat scroll;
+  background-position: center left;
+  padding-right: 7px;
+  width: 28px;
+}
+
+.header .header__container .search__input {
+  font-family: Lato, Arial;
+  font-size: 30px;
+  width: 100%;
+  min-width: 35px;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  color: white;
+  padding-left: 0px;
+}
+
+.header .header__container .search__input:focus {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 0px;
+  outline: none;
+  border-bottom-color: white;
+}
+
+.header .header__container .header__nav {
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.header .header__container .header__nav .btn-cart {
+  position: relative;
+}
+
+.header .header__container .header__nav .btn-cart .num-in-cart {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  background-color: #f16d7f;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  vertical-align: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0px;
+  right: 0px;
+}
+
+.header .header__container .header__nav .btn-cart:hover > .num-in-cart {
+  color: #f16d7f;
+  background-color: white;
+}
+/*# sourceMappingURL=header.css.map */
